@@ -1,0 +1,17 @@
+print('1.2 Feladat')
+print('Az előbbi programot módosítsd úgy, hogy újabb és újabb mondatot kérjen be a program\n(amig a felhasználó csak egy ENTER-t nem üt), majd állapítsa meg, és írja ki mineden egyes alkalommal a mondat fajtáját!')
+
+while True:
+    print('\n(A kilépéshez nyomj egy ENTER-t.)')
+    mondat = input('Írj be egy mondatot aminek a végén van mondatvégi írásjel: ')
+    if mondat == '':
+        print('\nViszlát!')
+        break
+    elif mondat[-1] not in ['.!?']:
+        print('\nTegyél mondatvégi írásjelet a mondat végére!')
+    elif mondat[-1] == '.':
+        print(f'\n{mondat} --> Ez egy kijelentő mondat.')
+    elif mondat[-1] == '?':
+        print(f'\n{mondat} --> Ez egy kérdő mondat.')
+    else:
+        print(f'\n{mondat} --> Ez egy felkiáltó / felszólító / óhatjtó mondat.')

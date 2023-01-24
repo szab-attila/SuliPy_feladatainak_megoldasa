@@ -1,0 +1,15 @@
+print('1.2 Feladat')
+print('\nAlakítsuk át az előbbi programot úgy, hogy a program arról adjon tájékoztatást,\nhogy pontosan hányszor szerepel a felhasználó által megadott szín a listában!\nHa a megadott szín nincs még tárolva, továbbra is a "A megadott szín nem szerepel a listában." szöveg jelenjen meg!')
+
+paletta = ['kék', 'piros', 'fehér', 'fekete', 'zöld', 'sárga', 'barna', 'piros', 'fehér', 'szürke']
+
+szin = input('Adj meg egy színt: ')
+szamlalo = 0
+
+if szin in paletta:
+    szin2 = szin
+    if szin == szin2:
+        szamlalo += 1
+    print(f'A megadott szín pontosan {szamlalo} alkalommal szerepel a listában.')
+else:
+    print('A megadott szín nem szerepel a listában.')

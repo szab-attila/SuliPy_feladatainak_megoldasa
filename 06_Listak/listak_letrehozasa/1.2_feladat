@@ -1,0 +1,16 @@
+print('1.2 Feladat')
+print('\nFejleszd tovább úgy az előző programot, hogy a 3. név megadása után tájékoztassa a program a felhasználót, hogy már nincs lehetősége újabb adat bevitelére, írja ki az addig megadott neveket, és lépjen ki.')
+
+nevek = []
+
+while True:
+    nev = input('Adj meg egy nevet: ')
+    if nev == '':
+        break 
+    nevek.append(nev)
+    formazott = ', '.join(nevek)
+
+print()
+print(formazott)
+    
+print('\nViszlát!')
